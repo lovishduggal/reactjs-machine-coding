@@ -1,9 +1,14 @@
-import InfiniteScroll from './InfiniteScroll';
+// import InfiniteScroll from './infiniteScroll/InfiniteScroll';
+
+import ListOfAcc from './acc/Accordion';
 
 function App() {
   return (
     <>
-      <InfiniteScroll />
+      {' '}
+      {/* I will put routing */}
+      <ListOfAcc />
+      {/* <InfiniteScroll /> */}
     </>
   );
 }
