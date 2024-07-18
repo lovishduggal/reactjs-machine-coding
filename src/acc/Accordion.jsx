@@ -21,10 +21,8 @@ const Accordion = ({ isOpen, setIsOpen }) => {
 };
 
 const ListOfAcc = () => {
-  // const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(null);
   const data = new Array(5).fill('');
-  console.log(data);
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <div>
@@ -32,7 +30,7 @@ const ListOfAcc = () => {
           <Accordion
             key={idx}
             isOpen={idx === index ? true : false}
-            setIsOpen={() => setIndex(idx)}
+            setIsOpen={() => setIndex(idx === index ? null : idx)}
           />
         ))}
       </div>

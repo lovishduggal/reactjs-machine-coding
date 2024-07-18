@@ -22,7 +22,6 @@ const InfiniteScroll = () => {
     setLoading(true);
     const resp = await fetch('https://meme-api.com/gimme/5');
     const respData = await resp.json();
-    console.log(respData);
 
     setLoading(false);
 
@@ -37,7 +36,7 @@ const InfiniteScroll = () => {
           data?.map((memeData, idx) => (
             <div className="flex" key={idx}>
               <div>
-                <img className="w-72 h-72 m-4" src={memeData?.url} />
+                <img className="w-96 h-96 m-4" src={memeData?.url} />
               </div>
             </div>
           ))}

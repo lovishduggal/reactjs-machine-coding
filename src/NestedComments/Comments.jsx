@@ -51,7 +51,7 @@ const Comment = ({ item }) => {
           <div className="mr-4 ">
             <img
               className="w-10 h-10 rounded-full"
-              src="https://pbs.twimg.com/profile_images/1605145946274160640/kgPFhFbm_400x400.jpg"
+              src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg"
               alt="user"
             />
           </div>

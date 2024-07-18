@@ -1,16 +1,20 @@
-// import InfiniteScroll from './infiniteScroll/InfiniteScroll';
-// import ListOfAcc from './acc/Accordion';
-import Comments from './NestedComments/Comments';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      {' '}
-      {/* I will put routing */}
-      {/* <ListOfAcc /> */}
-      {/* <InfiniteScroll /> */}
-      <Comments />
-    </>
+    <div className="flex justify-center items-center h-screen">
+      <ul className="list-disc text-2xl font-medium">
+        <li>
+          <Link to="/accordion">Accordion</Link>
+        </li>
+        <li>
+          <Link to="/infinite-scroll">Infinite Scroll</Link>
+        </li>
+        <li>
+          <Link to="/nested-comments">Nested Comments</Link>
+        </li>
+      </ul>
+    </div>
   );
 }
 
