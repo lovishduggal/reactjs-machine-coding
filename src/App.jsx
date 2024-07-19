@@ -13,6 +13,9 @@ function App() {
         <li>
           <Link to="/nested-comments">Nested Comments</Link>
         </li>
+        <li>
+          <Link to="/image-slider">Image Slider</Link>
+        </li>
       </ul>
     </div>
   );
